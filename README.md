@@ -45,23 +45,29 @@ npm install
 
 ### 3. Environment Configuration
 
-Create a `.env.local` file in the root directory (copy from `.env.example` if available):
+Create a `.env.local` file in the root directory:
 
 ```bash
+# Option 1: Copy from example (if .env.example exists)
 cp .env.example .env.local
+
+# Option 2: Create manually
+touch .env.local
 ```
 
-Add the following environment variables to `.env.local` or copy from `.env.example`:
+Add the following environment variables to your `.env.local` file:
 
 ```env
-# thirdweb Configuration
+# thirdweb Configuration (Required)
 NEXT_PUBLIC_TEMPLATE_CLIENT_ID=your_thirdweb_client_id_here
 
-# Web Push Configuration
-NEXT_PUBLIC_VAPID_PUBLIC_KEY=your_vapid_public_key
-VAPID_PRIVATE_KEY=your_vapid_private_key
+# Web Push Configuration (Required for notifications)
+NEXT_PUBLIC_VAPID_PUBLIC_KEY=your_vapid_public_key_here
+VAPID_PRIVATE_KEY=your_vapid_private_key_here
 VAPID_SUBJECT=mailto:your-email@example.com
 ```
+
+> **Important**: Replace all placeholder values with your actual credentials. See the steps below for obtaining these values.
 
 ### 4. Generate VAPID Keys
 
