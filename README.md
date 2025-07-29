@@ -105,8 +105,6 @@ For full PWA functionality (including install prompts):
 npm run build && npm run start
 ```
 
-> **Note**: The install app button only works in production mode (`npm run build && npm run start`)
-
 ## 📱 PWA Features
 
 ### Installation
