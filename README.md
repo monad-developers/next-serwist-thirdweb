@@ -17,7 +17,6 @@ A modern, full-stack Progressive Web Application built with Next.js 14, featurin
 - **Styling**: Tailwind CSS
 - **Web3**: thirdweb, Wagmi, Viem
 - **PWA**: Serwist (Service Worker)
-- **State Management**: TanStack Query
 - **Notifications**: Web Push API
 
 ## 📋 Prerequisites
