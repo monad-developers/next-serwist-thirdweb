@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import SendNotification from "./components/SendNotification";
+import TransactionButton from "./components/TransactionButton";
 import { InstallPWA } from "./components/InstallPWA";
 import { ConnectButton } from "thirdweb/react";
 import { client } from "./client";
@@ -22,16 +23,18 @@ export default function Page() {
         </div>
         
         <div className="space-y-8">
+          <div className="flex justify-center mb-8">
+            <ConnectButton
+              client={client}
+              appMetadata={{
+                name: "Example App",
+                url: "https://example.com",
+              }}
+            />
+          </div>
+          
+          <TransactionButton />
           <SendNotification />
-          <div className="flex justify-center mb-20">
-          <ConnectButton
-            client={client}
-            appMetadata={{
-              name: "Example App",
-              url: "https://example.com",
-            }}
-          />
-        </div>
         </div>
       </div>
       <InstallPWA />
