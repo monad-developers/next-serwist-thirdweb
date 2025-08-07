@@ -58,7 +58,7 @@ Add the following environment variables to your `.env.local` file:
 
 ```env
 # thirdweb Configuration (Required)
-NEXT_PUBLIC_TEMPLATE_CLIENT_ID=your_thirdweb_client_id_here
+NEXT_PUBLIC_THIRDWEB_CLIENT_ID=your_thirdweb_client_id_here
 
 # Web Push
 WEB_PUSH_EMAIL=user@example.com
